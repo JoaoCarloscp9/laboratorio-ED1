@@ -1,0 +1,35 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build raylib",
+            "command": "C:\\raylib\\w64devkit\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\output\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:\\raylib\\raylib\\src",
+                "-L",
+                "C:\\raylib\\raylib\\src",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compila o arquivo .c aberto no editor usando raylib"
+        }
+    ],
+    "version": "2.0.0"
+}
