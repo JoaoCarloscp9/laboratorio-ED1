@@ -89,6 +89,7 @@ Moeda *criarMoedas(int quantidade)
                            GetRandomValue(30, ALTURA_JANELA - 30)};
         m->raio = 10.0f;
         m->tipo = sortearTipoMoeda(); 
+        m->valor = valorDaMoeda(m->tipo);
         m->coletada = false;
         m->tempoColeta = 0.0f; 
     }
